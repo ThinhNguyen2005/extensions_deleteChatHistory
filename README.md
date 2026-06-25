@@ -5,8 +5,6 @@
 ---
 
 ## 📸 Giao diện Tiện ích
-*(Bạn có thể chèn ảnh chụp màn hình giao diện của tiện ích vào đây dưới tên `screenshot.png`)*
-
 ![Giao diện Gemini Cleaner](./screenshot.png)
 
 ---
