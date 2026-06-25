@@ -1,0 +1,303 @@
+/* Neo-Brutalist Styles for Gemini History Cleaner Panel */
+
+#gemini-cleaner-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 6px 6px 0px #a87ffb;
+  color: #ffffff;
+  font-family: 'Consolas', 'Courier New', Monaco, monospace;
+  z-index: 99999;
+  overflow: hidden;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+  user-select: none;
+}
+
+
+.gemini-cleaner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #a87ffb;
+  color: #000000;
+  border-bottom: 3px solid #ffffff;
+}
+
+.gemini-cleaner-title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gemini-cleaner-sparkle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gemini-cleaner-title {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gemini-cleaner-toggle-btn {
+  background: #ffffff;
+  border: 2px solid #000000;
+  color: #000000;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0px #000000;
+  transition: all 0.1s;
+}
+
+.gemini-cleaner-toggle-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.gemini-cleaner-toggle-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px #000000;
+}
+
+
+/* Body container */
+.gemini-cleaner-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: transparent;
+}
+
+/* Info and status section */
+.gemini-cleaner-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.gemini-cleaner-status-label {
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.gemini-cleaner-status-value {
+  font-weight: bold;
+  color: #8ab4f8;
+}
+
+.gemini-cleaner-chat-count {
+  font-size: 13px;
+  background: #1e1e1e;
+  padding: 10px 12px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 0px #a87ffb;
+}
+
+/* Button styles */
+.gemini-cleaner-btn {
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.gemini-cleaner-btn-primary {
+  background: #8ab4f8;
+  color: #000000;
+  box-shadow: 3px 3px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-primary:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-primary:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-secondary {
+  background: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 3px 3px 0px #8ab4f8;
+}
+
+.gemini-cleaner-btn-secondary:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #8ab4f8;
+}
+
+.gemini-cleaner-btn-secondary:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px #8ab4f8;
+}
+
+.gemini-cleaner-btn-danger {
+  background: #ea4335;
+  color: #ffffff;
+  box-shadow: 3px 3px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-danger:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-danger:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-warning {
+  background: #f2c94c;
+  color: #000000;
+  box-shadow: 3px 3px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-warning:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #ffffff;
+}
+
+.gemini-cleaner-btn-warning:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px #ffffff;
+}
+
+.gemini-cleaner-btn:disabled {
+  background: #333333 !important;
+  color: #666666 !important;
+  border-color: #555555 !important;
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px #000000 !important;
+  transform: none !important;
+}
+
+/* Row of delete controls */
+.gemini-cleaner-input-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.gemini-cleaner-number-input {
+  width: 60px;
+  background: #1e1e1e;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 8px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 3px 3px 0px #a87ffb;
+}
+
+.gemini-cleaner-number-input:focus {
+  border-color: #8ab4f8;
+  box-shadow: 3px 3px 0px #8ab4f8;
+}
+
+/* Progress bar section */
+.gemini-cleaner-progress-container {
+  background: #1e1e1e;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 3px 3px 0px #f2c94c;
+}
+
+.gemini-cleaner-progress-bar-bg {
+  height: 12px;
+  background: #333333;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.gemini-cleaner-progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: #a87ffb;
+  transition: width 0.2s linear;
+}
+
+/* Logs and activities list */
+.gemini-cleaner-logs {
+  background: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 11px;
+  color: #a8a8a8;
+  max-height: 140px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 3px 3px 0px #333333;
+}
+
+.gemini-cleaner-log-item {
+  line-height: 1.4;
+  word-break: break-all;
+  border-bottom: 1px dashed #333333;
+  padding-bottom: 4px;
+}
+
+.gemini-cleaner-log-item:last-child {
+  border-bottom: none;
+}
+
+.gemini-cleaner-log-item.info {
+  color: #8ab4f8;
+}
+
+.gemini-cleaner-log-item.success {
+  color: #81c995;
+}
+
+.gemini-cleaner-log-item.warning {
+  color: #f2c94c;
+}
+
+.gemini-cleaner-log-item.error {
+  color: #ea4335;
+}

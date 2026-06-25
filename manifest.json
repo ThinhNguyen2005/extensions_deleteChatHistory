@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Cleaner - Xóa nhanh lịch sử",
+  "version": "1.3",
+  "description": "Tiện ích mở rộng giúp xóa nhanh các cuộc trò chuyện cũ trên Gemini để tránh lag trình duyệt.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "Kích hoạt Gemini Cleaner",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gemini.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
